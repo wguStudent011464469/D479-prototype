@@ -1,0 +1,68 @@
+/* ===== Taniti Wireframe Styles (Low-Fidelity) ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+body { background: #f7f7f7; color: #111; }
+
+/* Bordered boxes to simulate wireframe regions */
+.wf-box {
+  border: 2px dashed #666;
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+header, nav, main, footer { padding: 12px; }
+header, footer, nav { background: #eee; border: 2px solid #333; }
+
+/* Global layout */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* Navigation */
+nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #111; font-weight: 700; padding: 4px 8px; border: 1px dotted #777; }
+
+/* Hero */
+.hero {
+  height: 220px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.hero .label { opacity: .8; }
+
+/* Grid layouts */
+.grid { display: grid; gap: 12px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: 2fr 1fr; }
+
+/* Cards */
+.card { min-height: 120px; }
+.card h3 { margin: 0 0 6px 0; }
+.placeholder { height: 80px; background: #f0f0f0; border: 1px dashed #aaa; display: grid; place-items: center; color: #666; }
+
+/* Page height for footer positioning */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1; }
+
+/* Table + form styles */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+thead th { background: #fafafa; }
+
+.form-grid { display: grid; gap: 8px; max-width: 420px; }
+input, select, textarea, button { padding: 8px; border: 1px dashed #666; background: #fff; }
+button { font-weight: 700; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+}
