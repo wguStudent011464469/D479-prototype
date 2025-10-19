@@ -42,7 +42,7 @@ nav a { text-decoration: none; color: #111; font-weight: 700; padding: 4px 8px; 
 /* Cards */
 .card { min-height: 120px; }
 .card h3 { margin: 0 0 6px 0; }
-.placeholder { height: 80px; background: #f0f0f0; border: 1px dashed #aaa; display: grid; place-items: center; color: #666; }
+.placeholder { height: 150px; background: #f0f0f0; border: 1px dashed #aaa; display: grid; place-items: center; color: #666; }
 
 /* Page height for footer positioning */
 .page {
